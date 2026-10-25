@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="The personal website of Philip Reames." /> 
+<meta name="keywords" content="philip reames, philip, reames, reams, GPU, BFS, garbage collection, AMD, parallel breadth-first search" /> 
+<title>Philip Reames' Website - GPUs as an Opportunity for Offloading Garbage Collection (ISMM 2012)</title>
+</head>
+
+<body>
+
+<h1>GPUs as an Opportunity for Offloading Garbage Collection</h1>
+<a href="ismm2012-gpugc-final.pdf">(Download PDF)</a> <a href="http://dl.acm.org/citation.cfm?id=2259002">(ACM)</a>
+
+<h3>Citation</h3>
+<a href="http://www.eecs.berkeley.edu/~maas/">Martin Maas</a>, <a href="../">Philip Reames</a>, Jeffrey Morlan, <a href="http://www.eecs.berkeley.edu/~krste/">Krste Asanović</a>, <a href="http://www.eecs.berkeley.edu/~adj/">Anthony D. Joseph</a>, <a href="http://www.eecs.berkeley.edu/~kubitron/">John Kubiatowicz</a>. GPUs as an Opportunity for Offloading Garbage Collection. <a href="http://ismm12.cs.purdue.edu">International Symposium on Memory Management 2012</a>, Beijing, China, June 2012 
+
+<h3>Abstract</h3>
+<p>GPUs have become part of most commodity systems. Nonetheless, they are often underutilized when not executing graphics-intensive or special-purpose numerical computations, which are rare in consumer workloads. Emerging architectures, such as integrated CPU/GPU combinations, may create an opportunity to utilize these otherwise unused cycles for offloading traditional systems tasks. Garbage collection appears to be a particularly promising candidate for offloading, due to the popularity of managed languages on consumer devices.</p>
+
+<p>We investigate the challenges for offloading garbage collection to a GPU, by examining the performance trade-offs for the mark phase of a mark & sweep garbage collector. We present a theoretical analysis and an algorithm that demonstrates the feasibility of this approach. We also discuss a number of algorithmic design trade-offs required to leverage the strengths and capabilities of the GPU hardware. Our algorithm has been integrated into the Jikes RVM and we present promising performance results.</p>
+
+<h3>Categories and Subject Descriptors</h3>
+ D.3.4 [Processors]: Memory management (garbage collection); I.3.1 [Hardware Architecture]: Parallel processing
+
+<h3>Keywords</h3>
+parallel garbage collection, mark and sweep, SIMT, GPU, APU
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="The personal website of Philip Reames." /> 
+<meta name="keywords" content="philip reames, philip, reames, reams, hinted collection, hintgc, garbage collection" /> 
+<title>Philip Reames' Website - Towards Hinted Collection: Annotations for decreasing garbage collector pause times (ISMM 2013)</title>
+</head>
+
+<body>
+
+
+<h1>Towards Hinted Collection: Annotations for decreasing garbage collector pause times</h1>
+<a href="ismm2013-hinted-collection-camera-ready.pdf">(Download PDF)</a> <a href="ismm2013-hinted-collection-camera-ready.ps">(Download PS)</a>
+
+<h3>Citation</h3>
+<a href="../">Philip Reames</a>, <a href="http://www.cs.berkeley.edu/~necula/">George Necula</a>. Towards Hinted Collection: Annotations for decreasing garbage collector pause times. <a href="http://www.cs.technion.ac.il/~erez/ismm13/">International Symposium on Memory Management 2013</a>, Seattle, WA, June 2013 (to appear) 
+
+<h3>Abstract</h3>
+<p>Garbage collection is widely used and has largely been a boon for programmer productivity.  However, traditional garbage collection is approaching both practical and theoretical performance limits.  In practice, the maximum heap size and heap structure of large applications are influenced as much by garbage collector behavior as by resource availability.</p>
+
+<p>We present an alternate approach to garbage collection wherein the programmer provides untrusted <i>deallocation hints</i>.  Usage of deallocation hints is similar to trusted manual deallocation, but the consequence of an inaccurate hint is lost performance not correctness.  Our hinted collector algorithm uses these hints to identify a subset of unreachable objects with both better parallel asymptotic complexity and practical performance.  On some benchmarks, our prototype collector implementation achieves 10-20% pause time reductions. We close with a discussion of the design trade-offs inherent in our approach and lessons to be learned from our collector.</p>
+
+
+<h3>Categories and Subject Descriptors</h3> 
+D.3.4 [Processors]: Memory management (garbage collection); D.3.3 [Language Constructs and Features]: Dynamic storage management
+
+<h3>Keywords</h3>
+hinted collection, deallocation hint, memory management, parallel garbage collection, mark and sweep
+
+</body>
+</html>

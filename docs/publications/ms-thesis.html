@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="The personal website of Philip Reames." /> 
+<meta name="keywords" content="philip reames, philip, reames, reams, hinted collection, hintgc, deallocation hint, garbage collection, masters thesis" /> 
+<title>Philip Reames' Website - Hinted Collection (MS Thesis)</title>
+</head>
+
+<body>
+
+
+<h1>Hinted Collection (MS Thesis)</h1>
+<p> <a href="reames-ms-thesis-final.pdf">(Download PDF)</a> <a href="reames-ms-thesis-final.ps">(Download PS) <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-93.html">(Tech Report)</a> </p>
+
+<h3>Citation</h3>
+Philip Reames. Hinted Collection. Master’s thesis, University of California Berkeley, May 2013. 
+
+<h3>Abstract</h3>
+<p>Garbage collection is widely used and has largely been a boon for programmer productivity. However, traditional garbage collection is approaching both practical and theoretical performance limits. In practice, the maximum heap size and heap structure of large applications are influenced as much by garbage collector behavior as by resource availability. </p>
+
+<p>We present an alternate approach to garbage collection wherein the programmer provides untrusted deallocation hints. Usage of deallocation hints is similar to trusted manual deallocation, but the consequence of an inaccurate hint is lost performance not correctness. Our hinted collection algorithm uses these hints to identify a subset of unreachable objects with both better parallel asymptotic complexity and practical performance.</p>
+
+<p>We present two prototype implementations of a stop-the-world hinted collector: one entirely serial and one parallel. We evaluate our implementations by comparing against the Boehm-Demers-Weiser [12] conservative garbage collector for C/C++. We leverage existing free calls in mature C programs to stand in for deallocation hints. On some benchmarks, our serial collector implementation achieves 10-20% pause time reductions over a well-tuned baseline. On four cores, our parallel implementation achieves similar benefits. </p>
+
+<p>We include a discussion of the design trade-offs inherent in our approach, and lessons to be learned from our collectors. We close with a discussion of several design variants which we have not been able to explore in depth, but believe would be worthwhile to explore in future work.</p>
+
+
+<h3>Keywords</h3>
+hinted collection, deallocation hint, memory management, parallel garbage collection, mark and sweep
+
+</body>
+</html>
